@@ -1,0 +1,19 @@
+.card {
+  background-color: #fff;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+
+  margin: 4rem;
+  &-img {
+    width: 10rem;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+    z-index: 1;
+  }
+  &-details {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    z-index: 1;
+  }
+}

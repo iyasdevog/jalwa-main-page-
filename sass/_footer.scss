@@ -1,0 +1,14 @@
+.footer {
+  overflow: hidden;
+  background-color: $color-secondary;
+  grid-column: side-start/full-end;
+}
+.footer-box {
+  padding: 5rem;
+  display: grid;
+
+  p {
+    color: white;
+    place-self: center;
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  grid-column: side-start/full-end;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.83),
+      rgba($color-secondary, 0.83)
+    ),
+    url(../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+  // height: 97vh;
+
+  padding: 5rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1rem repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+}
+q {
+  font-size: 1.4rem;
+}

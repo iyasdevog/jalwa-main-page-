@@ -1,0 +1,78 @@
+.story {
+  grid-column: side-end/col-end 5;
+  padding: 3rem;
+  margin: 5rem;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50rem;
+  gap: 1rem;
+
+  background-color: #fff;
+  &-img {
+    &_1 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    &_2 {
+      grid-row: 4/5;
+      grid-column: 1/2;
+    }
+  }
+  &-grid-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    place-self: center;
+  }
+  &-grid-2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    place-self: center;
+    margin-top: 8.5rem;
+  }
+  &-p-1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    place-self: center;
+    text-align: center;
+  }
+  &-p-2 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    place-self: center;
+    text-align: center;
+  }
+}
+
+.story-2 {
+  grid-column: col-end 5 / full-end;
+  // background-color: $color-primary;as
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &_p {
+    margin: 2rem;
+    color: #fff;
+  }
+  &-box {
+    background-color: $color-grey-dark-2;
+    height: 40rem;
+    padding: 5rem;
+
+    border-radius: 20rem 20rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.story-span {
+  background-color: $color-grey-dark-1;
+  border-radius: 100%;
+  display: block;
+  margin: 0;
+  height: 10rem;
+  width: 10rem;
+}
